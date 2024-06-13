@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="two.css">
+</head>
+
+<body style="background-image: url('./images/adidas.png');" >
+    <header>
+        <div class="header">
+            <div class="logo">  
+                <img src="./images/adidas.png">
+            </div>
+            <div class="searchbar">
+                <input type="search" placeholder="Search the product here">
+                <label>Search</label>
+            </div>
+            <nav>
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="three.html">About us</a> </li>
+                    <li> <a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="productgallery">
+        <div class="product">
+            <h2>Iphone pro max</h2>
+            <h3>Iphone</h3>
+            <h4>34500 Rps</h4>
+            <h5>9123456789</h5>
+            <button class = "buynow" onclick="unhideone()">Buy now</button>
+            <button onclick = "remove(event)">Remove</button>
+        </div>
+        <div class="product">
+            <h2>SUV car</h2>
+            <h3>Tata</h3>
+            <h4>3 Lakh Rps</h4>
+            <h5>9123456789</h5>
+            <button class = "buynow" onclick="unhideone()">Buy now</button>
+            <button onclick="remove(event)">Remove</button>
+        </div>
+        <div class="product">
+            <h2>SmartTv(Anroid)</h2>
+            <h3>Samsung</h3>
+            <h4>50000 Rps</h4>
+            <h5>9123456789</h5>
+            <button class = "buynow" onclick="unhideone()">Buy now</button>
+            <button onclick = "remove(event)">Remove</button>
+        </div>
+
+    </div>
+    <div class=middle>
+    </div>
+    <div class="content">
+        <form class="contentform">
+            <h1>Product detail</h1>
+            <input id="name" type="text" placeholder="Enter the product name">
+            <input id="brand" type="text" placeholder="Enter the Brand">
+            <input id="price" type="text" placeholder="Enter the price">
+            <input id="phone" type="text" placeholder="Enter the Phone number">
+            <button id="addtosale">Add to Sale</button>
+        </form>
+    </div>
+    <div class = "order">
+        <form class="orderform">
+            <h1>Buy Now</h1>
+            <input id="address" type="text" placeholder="Enter your address">
+            <input id="pincode" type="number" placeholder="Enter the pincode of your area">
+            <button id="addtosale" onclick="unhidetwo(event)">Buy</button>
+        </form>
+    </div>
+    <div class="wish">
+        <label class = "labelwish">Thank You For Buying<button onclick="back(event)">Back</button>    </label>
+    </div>
+    <button class="footer" onclick="unhide()">+</button>
+    <script src="two.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.signin{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.signin form{
+    background-color: black;
+    border-radius: 7px;
+    color : white;
+    height : 400px;
+    width: 20%;
+    padding : 30px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 10px 20px grey;
+}
+
+.signin form input{
+    width : 85%;
+    height: 25px;
+    border-radius: 5px;
+    margin: 5px 0px 19px 0px;
+}
+
+.buttondiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.signin form button{
+    margin-top : 20px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: grey;
+    font-weight: bold;
+}
+
+.signin form button a{
+    color : black;
+}
